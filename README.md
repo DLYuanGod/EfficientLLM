@@ -11,10 +11,14 @@
 - [ ] Code cleanup and documentation.
 
 ---
+### 🧠 PEFT Models (Parameter-Efficient Fine-Tuning)
+
 > 📅 Development Starts: **After June 15, 2025**
 - [ ] Release fine-tuned checkpoints and configuration files.
 
 ---
+### 📦 Pretrained Models
+
 
 > 📅 Gradual Release: **Starting August 2025**
 
