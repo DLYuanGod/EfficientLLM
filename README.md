@@ -24,3 +24,8 @@
 
 - [ ] Release base pretrained checkpoints  
 - [ ] Provide scripts for inference and reproducibility.
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=DLYuanGod/EfficientLLM&type=Date)](https://www.star-history.com/#DLYuanGod/EfficientLLM&Date)
