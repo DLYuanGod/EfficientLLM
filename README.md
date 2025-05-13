@@ -28,4 +28,4 @@
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=DLYuanGod/EfficientLLM&type=Date)](https://www.star-history.com/#DLYuanGod/EfficientLLM&Date)
+<iframe style="width:100%;height:auto;min-width:600px;min-height:400px;" src="https://www.star-history.com/embed?secret=Z2hwX0lYYkxsdEJZa0V1cGtZN3d2T0hmVzFHVVdyUmlKVjF4UTFaRw==#DLYuanGod/EfficientLLM&Date" frameBorder="0"></iframe>
