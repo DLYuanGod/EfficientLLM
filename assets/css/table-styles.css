@@ -1,0 +1,121 @@
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#efficiency-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+}
+
+#efficiency-table thead {
+  background-color: #f8f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#efficiency-table th {
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #3d3d3d;
+  border-bottom: 2px solid #dee2e6;
+  white-space: nowrap;
+}
+
+#efficiency-table td {
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+#efficiency-table tr.highlight {
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+#efficiency-table .sort-icon {
+  cursor: pointer;
+  transition: all 0.2s;
+  opacity: 0.5;
+}
+
+#efficiency-table .sort-icon:hover,
+#efficiency-table .sort-icon.active {
+  opacity: 1;
+}
+
+#efficiency-table .sort-icon.desc {
+  transform: rotate(180deg);
+}
+
+.btn-group .btn {
+  transition: all 0.2s;
+}
+
+.bg-danger-subtle {
+  background-color: rgba(220, 53, 69, 0.15);
+  color: #c82333;
+  font-weight: bold;
+}
+
+.bg-warning-subtle {
+  background-color: rgba(255, 193, 7, 0.15);
+  color: #e0a800;
+  font-weight: bold;
+}
+
+.bg-success-subtle {
+  background-color: rgba(40, 167, 69, 0.15);
+  color: #218838;
+  font-weight: bold;
+}
+
+.bg-primary-subtle {
+  background-color: rgba(0, 123, 255, 0.15);
+  color: #0069d9;
+  font-weight: bold;
+}
+
+.bg-light-subtle {
+  background-color: rgba(248, 249, 250, 0.5);
+  color: #343a40;
+  font-weight: bold;
+}
+
+/* 响应式调整 */
+@media (max-width: 992px) {
+  #efficiency-table {
+    font-size: 0.85rem;
+  }
+  
+  #efficiency-table th,
+  #efficiency-table td {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #efficiency-table {
+    font-size: 0.8rem;
+  }
+  
+  #efficiency-table th,
+  #efficiency-table td {
+    padding: 6px 8px;
+  }
+}
+
+/* 打印样式优化 */
+@media print {
+  #efficiency-table {
+    width: 100%;
+    box-shadow: none;
+  }
+  
+  .btn-group {
+    display: none;
+  }
+} 
