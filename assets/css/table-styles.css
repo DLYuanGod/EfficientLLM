@@ -1,1 +1,230 @@
 /* --- Reset/Base Table Styles --- */
+@font-face {
+  font-family: 'HFSantaMonica'; /* 您为字体设定的名称 */
+  /* 假设 main.css 在 assets/css/，而 forms 文件夹在 assets/ 内部 */
+  src: url('../../forms/HFSantaMonica-2.ttf') format('truetype'); 
+  /* 备选路径假设:
+    - 如果 forms 与 assets 文件夹同级 (都在项目根目录):
+      src: url('../../forms/HFSantaMonica-2.ttf') format('truetype');
+    - 如果 forms 在项目根目录，且此 @font-face 直接写在 HTML 的 <style> 中:
+      src: url('forms/HFSantaMonica-2.ttf') format('truetype');
+  */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --- 名言部分的样式 (与上次类似，确保已存在或添加) --- */
+.framework-quote {
+  margin-top: 50px; 
+  margin-bottom: 40px; 
+  padding: 0 15px; 
+  text-align: center;
+}
+
+.framework-quote p.quote-text {
+  font-family: 'HFSantaMonica'; /* 应用自定义字体 */
+  font-size: 1.9rem;    /* 针对较长引用，可适当调整字体大小 */
+  line-height: 1.6;     /* 调整行高以适应长句 */
+  color: #34495e;       /* 深一点的蓝灰色，增加可读性 */
+  margin-bottom: 15px;  /* 引文和作者之间的间距 */
+  font-weight: normal; 
+  letter-spacing: 0.2px; 
+  text-align: justify; /* 长文本两端对齐可能效果更好 */
+  hyphens: auto;       /* 允许自动断字以改善两端对齐效果 */
+  padding: 0 10%;      /* 给长引用左右一些内边距，使其不要太宽 */
+}
+
+.framework-quote p.quote-author {
+  font-family: 'HFSantaMonica'; /* 作者字体 */
+  font-size: 1.15rem;                 /* 作者字体大小 */
+  color: #5a6775;                     /* 作者字体颜色 */
+  font-style: italic;
+  text-align: right;                  /* 作者靠右 */
+  padding-right: 10%;                 /* 配合引文的左右内边距 */
+  margin-top: 5px;
+}
+@font-face {
+  font-family: 'Borel';
+  src: url('../../forms/Borel-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+#animated-subtitle span {
+    opacity: 0;
+    display: inline-block;
+}
+@keyframes revealChar {
+    0% { opacity: 0; transform: translateY(8px) scale(0.9); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#efficiency-table {
+  width: 100%;
+  border-collapse: separate; 
+  border-spacing: 0;      
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+  font-size: 0.9rem;
+  border-radius: 8px; 
+  overflow: hidden;   
+}
+
+/* --- Table Header --- */
+#efficiency-table thead {
+  background-color: #4A5568; 
+  color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#efficiency-table th {
+  padding: 14px 18px; 
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-bottom: none; 
+  letter-spacing: 0.5px;
+}
+#efficiency-table th:not(:last-child) {
+  border-right: 1px solid #5A6578; 
+}
+
+
+/* --- Table Body Cells --- */
+#efficiency-table td {
+  padding: 12px 15px;
+  text-align: center; /* Default for ALL td cells, including scores */
+  border-bottom: 1px solid #e8edf3; 
+  vertical-align: middle !important;
+  color: #333; 
+}
+#efficiency-table td:not(:last-child) {
+  border-right: 1px solid #e8edf3; 
+}
+#efficiency-table tr:last-child td {
+    border-bottom: none; 
+}
+
+
+/* --- Styling for Category, Sub-Category, and Method Columns --- */
+
+/* Main Category column (e.g., "Architecture Pretraining Efficiency") */
+#efficiency-table tbody td:nth-child(1) {
+  background-color: #F0F4F8; 
+  text-align: left;
+  padding-left: 20px;
+  font-weight: 700; /* Bold */
+  color: #2C3E50;   
+}
+
+/* Sub-Category column (e.g., "Attention Mechanism") */
+#efficiency-table tbody td:nth-child(2) {
+  background-color: #F8FAFC; 
+  text-align: left;
+  padding-left: 20px;
+  font-weight: 700; /* Make Sub-Category bold as well */
+  color: #34495E;   
+}
+
+/* Method column */
+#efficiency-table tbody td:nth-child(3) {
+  background-color: #FFFFFF; 
+  text-align: left; /* Ensure Method name is left-aligned */
+  padding-left: 20px;
+  font-weight: 400; 
+  color: #555;
+}
+
+/* --- Score Cell Colors (Ensure these are applied correctly) --- */
+#efficiency-table td.bg-score-1 {
+  background-color: #fff9c4 !important; 
+  color: #795548 !important;
+  font-weight: bold !important; 
+  text-align: center !important; 
+}
+#efficiency-table td.bg-score-2-3 {
+  background-color: #c8e6c9 !important; 
+  color: #2e7d32 !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+#efficiency-table td.bg-score-4 {
+  background-color: #b3e5fc !important; 
+  color: #01579b !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+/* --- Dividers and Hover effects --- */
+#efficiency-table tbody tr.category-divider td {
+  border-top: 3px solid #A0AEC0; 
+}
+#efficiency-table tbody tr.category-divider:first-child td {
+  border-top: none;
+}
+
+#efficiency-table tbody tr:hover td:nth-child(1) { background-color: #e6ecf3 !important; } 
+#efficiency-table tbody tr:hover td:nth-child(2) { background-color: #eef2f7 !important; } 
+#efficiency-table tbody tr:hover td:nth-child(3) { background-color: #f9f9f9 !important; } 
+/* Ensure score cells retain their color on hover */
+#efficiency-table tbody tr:hover td.bg-score-1 { background-color: #fff9c4 !important; }
+#efficiency-table tbody tr:hover td.bg-score-2-3 { background-color: #c8e6c9 !important; }
+#efficiency-table tbody tr:hover td.bg-score-4 { background-color: #b3e5fc !important; }
+
+
+/* --- Legend --- */
+.legend-score-1, .legend-score-2-3, .legend-score-4 {
+  padding: 0.4em 0.7em; 
+  font-size: .8em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem; 
+  display: inline-block;
+  margin-bottom: 3px; 
+}
+.legend-score-1 { background-color: #fff9c4 !important; color: #795548 !important; border: 1px solid #FDEFB0;}
+.legend-score-2-3 { background-color: #c8e6c9 !important; color: #2e7d32 !important; border: 1px solid #B4D9B7;}
+.legend-score-4 { background-color: #b3e5fc !important; color: #01579b !important; border: 1px solid #9DD7F7;}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+  #efficiency-table { font-size: 0.85rem; }
+  #efficiency-table th, #efficiency-table td { padding: 10px 12px; }
+  #efficiency-table tbody td:nth-child(1),
+  #efficiency-table tbody td:nth-child(2),
+  #efficiency-table tbody td:nth-child(3) { padding-left: 15px; }
+}
+
+@media (max-width: 768px) {
+  #efficiency-table { font-size: 0.8rem; }
+  #efficiency-table th, #efficiency-table td { padding: 8px 10px; }
+  #efficiency-table tbody td:nth-child(1),
+  #efficiency-table tbody td:nth-child(2),
+  #efficiency-table tbody td:nth-child(3) { padding-left: 12px; } /* Corrected typo */
+}
+
+/* --- Print --- */
+@media print {
+  #efficiency-table { width: 100%; box-shadow: none; border-radius: 0; }
+  .btn-group { display: none; }
+  #efficiency-table thead { background-color: #f8f9fa; color: #333;} 
+  #efficiency-table th:not(:last-child) { border-right: 1px solid #ccc; }
+  #efficiency-table td { border-bottom: 1px solid #ccc; }
+  #efficiency-table td:not(:last-child) { border-right: 1px solid #ccc; }
+  #efficiency-table tbody tr.category-divider td { border-top: 2px solid #999; }
+  .bg-score-1, .bg-score-2-3, .bg-score-4 {
+    background-color: #ffffff !important;
+    border: 1px solid #ddd !important; 
+  }
+  .bg-score-1 { color: #795548 !important; }
+  .bg-score-2-3 { color: #2e7d32 !important; }
+  .bg-score-4 { color: #01579b !important; }
+}

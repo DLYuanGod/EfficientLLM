@@ -13,50 +13,7 @@
 /* Fonts */
 /* --- 添加到 assets/css/main.css 顶部 (或 <style> 标签内) --- */
 
-@font-face {
-  font-family: 'HFSantaMonica'; /* 您为字体设定的名称 */
-  /* 假设 main.css 在 assets/css/，而 forms 文件夹在 assets/ 内部 */
-  src: url('../../forms/HFSantaMonica-2.ttf') format('truetype'); 
-  /* 备选路径假设:
-    - 如果 forms 与 assets 文件夹同级 (都在项目根目录):
-      src: url('../../forms/HFSantaMonica-2.ttf') format('truetype');
-    - 如果 forms 在项目根目录，且此 @font-face 直接写在 HTML 的 <style> 中:
-      src: url('forms/HFSantaMonica-2.ttf') format('truetype');
-  */
-  font-weight: normal;
-  font-style: normal;
-}
 
-/* --- 名言部分的样式 (与上次类似，确保已存在或添加) --- */
-.framework-quote {
-  margin-top: 50px; 
-  margin-bottom: 40px; 
-  padding: 0 15px; 
-  text-align: center;
-}
-
-.framework-quote p.quote-text {
-  font-family: 'HFSantaMonica'; /* 应用自定义字体 */
-  font-size: 1.9rem;    /* 针对较长引用，可适当调整字体大小 */
-  line-height: 1.6;     /* 调整行高以适应长句 */
-  color: #34495e;       /* 深一点的蓝灰色，增加可读性 */
-  margin-bottom: 15px;  /* 引文和作者之间的间距 */
-  font-weight: normal; 
-  letter-spacing: 0.2px; 
-  text-align: justify; /* 长文本两端对齐可能效果更好 */
-  hyphens: auto;       /* 允许自动断字以改善两端对齐效果 */
-  padding: 0 10%;      /* 给长引用左右一些内边距，使其不要太宽 */
-}
-
-.framework-quote p.quote-author {
-  font-family: 'HFSantaMonica'; /* 作者字体 */
-  font-size: 1.15rem;                 /* 作者字体大小 */
-  color: #5a6775;                     /* 作者字体颜色 */
-  font-style: italic;
-  text-align: right;                  /* 作者靠右 */
-  padding-right: 10%;                 /* 配合引文的左右内边距 */
-  margin-top: 5px;
-}
 
 /* --- 响应式调整 --- */
 @media (max-width: 992px) {
