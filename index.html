@@ -8,11 +8,9 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
-  <!-- Favicons -->
   <link href="assets/img/logo_svg.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Custom Font -->
   <style>
     @font-face {
       font-family: 'Borel';
@@ -20,102 +18,55 @@
       font-weight: normal;
       font-style: normal;
     }
-    /* Added for character animation */
     #animated-subtitle span {
         opacity: 0;
-        display: inline-block; /* Allows transform and respects space for animation */
+        display: inline-block;
     }
-
-    @keyframes revealChar { /* Renamed from fadeInChar and updated */
-        0% {
-            opacity: 0;
-            transform: translateY(8px) scale(0.9);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
+    @keyframes revealChar {
+        0% { opacity: 0; transform: translateY(8px) scale(0.9); }
+        100% { opacity: 1; transform: translateY(0) scale(1); }
     }
   </style>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Table Styles -->
   <link href="assets/css/table-styles.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Invent
-  * Template URL: https://bootstrapmade.com/invent-bootstrap-business-template/
-  * Updated: May 12 2025 with Bootstrap v5.3.6
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Image logo is now enabled -->
         <img src="assets/img/logo_svg.png" alt="">
         <h1 class="sitename">EfficientLLM</h1><span>.</span>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <!-- <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li> -->
+          <!-- <li><a href="https://github.com/DLYuanGod/EfficientLLM/tree/main">Code</a></li> -->
         </ul>
+        <!-- <li><a href="https://github.com/DLYuanGod/EfficientLLM/tree/main">Code</a></li> -->
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="#about">Get Started</a>
-
+      <a class="btn-getstarted" href="https://github.com/DLYuanGod/EfficientLLM/tree/main">Code Get</a>
+      <!-- <a class="btn-getstarted" href="#about">Get Started</a> -->
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
     <section id="hero" class="hero section" style="background: url('assets/img/background3.png') no-repeat center center; background-size: cover; height: 100vh; display: flex; align-items: center;">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center">
@@ -126,38 +77,37 @@
           </div>
         </div>
       </div>
+    </section>
 
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
     <section id="about" class="about section">
-
       <div class="container">
-
         <div class="row justify-content-center">
           <div class="col-lg-10 text-center" data-aos="fade-up">
-                  <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
               <h2>Our Framework</h2>
-            </div><!-- End Section Title -->
+            </div>
+            <div class="framework-quote" data-aos="fade-up" data-aos-delay="100">
+              <p class="quote-text">
+                "The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency."
+              </p>
+              <p class="quote-author">
+                &mdash; Bill Gates
+              </p>
+            </div>
             <div class="img-wrapper" data-aos="fade-up" style="border: none; box-shadow: none;">
               <img src="assets/img/fig-intro-times.png" alt="研究图表" class="img-fluid" style="border: none;">
                <p style="text-align: left;">EfficientLLM establishes a comprehensive benchmark to evaluate and compare efficiency techniques across the lifecycle of large language models—from architecture pretraining to fine-tuning and inference—providing actionable insights into trade-offs between performance and consumption.</p>
             </div>
           </div>
         </div>
-
       </div>
-    </section><!-- /About Section -->
+    </section>
 
-    <!-- How We Work Section -->
     <section id="how-we-work" class="how-we-work section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Ranking</h2>
-      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
           <div class="col-12">
             <div class="table-responsive">
@@ -194,63 +144,76 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr data-category="architecture" data-subcategory="attention"><td rowspan="16" class="align-middle">Architecture Pretraining Efficiency</td><td rowspan="4" class="align-middle">Attention Mechanism</td><td>MQA</td><td class="bg-success-subtle">4</td><td class="bg-danger-subtle">1</td><td class=""></td><td class="bg-danger-subtle">1</td><td class="bg-danger-subtle">1</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">3</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="attention"><td>GQA</td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">3</td><td class=""></td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-success-subtle">4</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="attention"><td>MLA</td><td class="bg-danger-subtle">1</td><td class="bg-success-subtle">4</td><td class=""></td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="attention"><td>NSA</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class=""></td><td class="bg-success-subtle">4</td><td class="bg-success-subtle">4</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-danger-subtle">1</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="posenc"><td rowspan="4" class="align-middle">Efficient Positional Encoding</td><td>RoPE</td><td class="bg-danger-subtle">1</td><td class="bg-warning-subtle">2</td><td class=""></td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="posenc"><td>Absolute</td><td class="bg-success-subtle">4</td><td class="bg-success-subtle">4</td><td class=""></td><td class="bg-success-subtle">4</td><td class="bg-success-subtle">4</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-success-subtle">4</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="posenc"><td>Learnable Absolute</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">3</td><td class=""></td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">3</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="posenc"><td>Relate</td><td class="bg-warning-subtle">3</td><td class="bg-danger-subtle">1</td><td class=""></td><td class="bg-danger-subtle">1</td><td class="bg-danger-subtle">1</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-danger-subtle">1</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="moe"><td rowspan="4" class="align-middle">MoE Mechanism</td><td>Dense Model 1.5B</td><td class="bg-success-subtle">4</td><td class="bg-warning-subtle">2</td><td class=""></td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="moe"><td>Dense Model 3B</td><td class="bg-warning-subtle">3</td><td class="bg-danger-subtle">1</td><td class=""></td><td class="bg-danger-subtle">1</td><td class="bg-success-subtle">4</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-danger-subtle">1</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="moe"><td>MoE Model 1.5Bx8</td><td class="bg-danger-subtle">1</td><td class="bg-success-subtle">4</td><td class=""></td><td class="bg-success-subtle">4</td><td class="bg-danger-subtle">1</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-success-subtle">4</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="moe"><td>MoE Model 0.5Bx8</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">3</td><td class=""></td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">3</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="attfree"><td rowspan="4" class="align-middle">Attention-free Mechanism</td><td>Transformer</td><td class="bg-danger-subtle">1</td><td class="bg-success-subtle">4</td><td class=""></td><td class="bg-success-subtle">4</td><td class="bg-danger-subtle">1</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-success-subtle">4</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="attfree"><td>Mamba</td><td class="bg-warning-subtle">2</td><td class="bg-danger-subtle">1</td><td class=""></td><td class="bg-danger-subtle">1</td><td class="bg-success-subtle">4</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-danger-subtle">1</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="attfree"><td>Pythia</td><td class="bg-success-subtle">4</td><td class="bg-warning-subtle">3</td><td class=""></td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">3</td><td class=""></td></tr>
-                  <tr data-category="architecture" data-subcategory="attfree"><td>RWKV</td><td class="bg-warning-subtle">3</td><td class="bg-warning-subtle">2</td><td class=""></td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class="bg-warning-subtle">2</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="1-3b"><td rowspan="21" class="align-middle">Training & Tuning Efficiency</td><td rowspan="7" class="align-middle">1B-3B</td><td>LoRA</td><td class="bg-primary-subtle">7</td><td class="bg-primary-subtle">2</td><td class="bg-primary-subtle">2</td><td class="bg-primary-subtle">3</td><td class=""></td><td class="bg-primary-subtle">2</td><td class=""></td><td class="bg-primary-subtle">3</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="1-3b"><td>LoRA-Plus</td><td class="bg-primary-subtle">4</td><td class="bg-primary-subtle">5</td><td class="bg-primary-subtle">6</td><td class="bg-primary-subtle">4</td><td class=""></td><td class="bg-primary-subtle">3</td><td class=""></td><td class="bg-primary-subtle">2</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="1-3b"><td>RSLoRA</td><td class="bg-primary-subtle">5</td><td class="bg-primary-subtle">4</td><td class="bg-primary-subtle">5</td><td class="bg-primary-subtle">5</td><td class=""></td><td class="bg-primary-subtle">4</td><td class=""></td><td class="bg-primary-subtle">5</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="1-3b"><td>DoRA</td><td class="bg-primary-subtle">6</td><td class="bg-primary-subtle">7</td><td class="bg-primary-subtle">3</td><td class="bg-primary-subtle">7</td><td class=""></td><td class="bg-primary-subtle">6</td><td class=""></td><td class="bg-primary-subtle">6</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="1-3b"><td>PiSSA</td><td class="bg-primary-subtle">3</td><td class="bg-primary-subtle">6</td><td class="bg-primary-subtle">4</td><td class="bg-primary-subtle">6</td><td class=""></td><td class="bg-primary-subtle">5</td><td class=""></td><td class="bg-primary-subtle">4</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="1-3b"><td>Freeze</td><td class="bg-primary-subtle">1</td><td class="bg-primary-subtle">3</td><td class="bg-primary-subtle">7</td><td class="bg-primary-subtle">1</td><td class=""></td><td class="bg-primary-subtle">7</td><td class=""></td><td class="bg-primary-subtle">1</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="1-3b"><td>Full*</td><td class="bg-primary-subtle">2</td><td class="bg-primary-subtle">1</td><td class="bg-primary-subtle">1</td><td class="bg-primary-subtle">2</td><td class=""></td><td class="bg-primary-subtle">1</td><td class=""></td><td class="bg-primary-subtle">7</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="7-8b"><td rowspan="7" class="align-middle">7B-8B</td><td>LoRA</td><td class="bg-primary-subtle">2</td><td class="bg-primary-subtle">1</td><td class="bg-primary-subtle">5</td><td class="bg-primary-subtle">5</td><td class=""></td><td class="bg-primary-subtle">4</td><td class=""></td><td class="bg-primary-subtle">3</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="7-8b"><td>LoRA-Plus</td><td class="bg-primary-subtle">5</td><td class="bg-primary-subtle">2</td><td class="bg-primary-subtle">7</td><td class="bg-primary-subtle">6</td><td class=""></td><td class="bg-primary-subtle">5</td><td class=""></td><td class="bg-primary-subtle">2</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="7-8b"><td>RSLoRA</td><td class="bg-primary-subtle">3</td><td class="bg-primary-subtle">4</td><td class="bg-primary-subtle">6</td><td class="bg-primary-subtle">3</td><td class=""></td><td class="bg-primary-subtle">3</td><td class=""></td><td class="bg-primary-subtle">5</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="7-8b"><td>DoRA</td><td class="bg-primary-subtle">4</td><td class="bg-primary-subtle">6</td><td class="bg-primary-subtle">3</td><td class="bg-primary-subtle">7</td><td class=""></td><td class="bg-primary-subtle">7</td><td class=""></td><td class="bg-primary-subtle">6</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="7-8b"><td>PiSSA</td><td class="bg-primary-subtle">6</td><td class="bg-primary-subtle">3</td><td class="bg-primary-subtle">4</td><td class="bg-primary-subtle">4</td><td class=""></td><td class="bg-primary-subtle">5</td><td class=""></td><td class="bg-primary-subtle">4</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="7-8b"><td>Freeze</td><td class="bg-primary-subtle">1</td><td class="bg-primary-subtle">7</td><td class="bg-primary-subtle">2</td><td class="bg-primary-subtle">1</td><td class=""></td><td class="bg-primary-subtle">1</td><td class=""></td><td class="bg-primary-subtle">1</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="7-8b"><td>Full*</td><td class="bg-primary-subtle">7</td><td class="bg-primary-subtle">5</td><td class="bg-primary-subtle">1</td><td class="bg-primary-subtle">2</td><td class=""></td><td class="bg-primary-subtle">2</td><td class=""></td><td class="bg-primary-subtle">7</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="14-24b"><td rowspan="7" class="align-middle">14B-24B</td><td>LoRA</td><td class="bg-primary-subtle">3</td><td class="bg-primary-subtle">1</td><td class="bg-primary-subtle">6</td><td class="bg-primary-subtle">2</td><td class=""></td><td class="bg-primary-subtle">3</td><td class=""></td><td class="bg-primary-subtle">6</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="14-24b"><td>LoRA-Plus</td><td class="bg-primary-subtle">4</td><td class="bg-primary-subtle">3</td><td class="bg-primary-subtle">7</td><td class="bg-primary-subtle">6</td><td class=""></td><td class="bg-primary-subtle">7</td><td class=""></td><td class="bg-primary-subtle">1</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="14-24b"><td>RSLoRA</td><td class="bg-primary-subtle">1</td><td class="bg-primary-subtle">2</td><td class="bg-primary-subtle">5</td><td class="bg-primary-subtle">4</td><td class=""></td><td class="bg-primary-subtle">4</td><td class=""></td><td class="bg-primary-subtle">5</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="14-24b"><td>DoRA</td><td class="bg-primary-subtle">6</td><td class="bg-primary-subtle">7</td><td class="bg-primary-subtle">3</td><td class="bg-primary-subtle">7</td><td class=""></td><td class="bg-primary-subtle">2</td><td class=""></td><td class="bg-primary-subtle">4</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="14-24b"><td>PiSSA</td><td class="bg-primary-subtle">2</td><td class="bg-primary-subtle">4</td><td class="bg-primary-subtle">4</td><td class="bg-primary-subtle">3</td><td class=""></td><td class="bg-primary-subtle">4</td><td class=""></td><td class="bg-primary-subtle">3</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="14-24b"><td>Freeze</td><td class="bg-primary-subtle">5</td><td class="bg-primary-subtle">6</td><td class="bg-primary-subtle">2</td><td class="bg-primary-subtle">1</td><td class=""></td><td class="bg-primary-subtle">1</td><td class=""></td><td class="bg-primary-subtle">2</td><td class=""></td></tr>
-                  <tr data-category="training" data-subcategory="14-24b"><td>Full*</td><td class="bg-primary-subtle">7</td><td class="bg-primary-subtle">5</td><td class="bg-primary-subtle">1</td><td class="bg-primary-subtle">5</td><td class=""></td><td class="bg-primary-subtle">6</td><td class=""></td><td class="bg-primary-subtle">7</td><td class=""></td></tr>
-                  <tr data-category="inference" data-subcategory="1.5-3.8b"><td rowspan="9" class="align-middle">Quantification</td><td rowspan="3" class="align-middle">1.5B-3.8B</td><td>bfloat16</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td><td class=""></td><td class=""></td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">3</td></tr>
-                  <tr data-category="inference" data-subcategory="1.5-3.8b"><td>float16</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">1</td><td class=""></td><td class=""></td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">2</td></tr>
-                  <tr data-category="inference" data-subcategory="1.5-3.8b"><td>int4</td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">3</td><td class=""></td><td class=""></td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">1</td></tr>
-                  <tr data-category="inference" data-subcategory="7-8b"><td rowspan="3" class="align-middle">7B-8B</td><td>bfloat16</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td><td class=""></td><td class=""></td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td></tr>
-                  <tr data-category="inference" data-subcategory="7-8b"><td>float16</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">1</td><td class=""></td><td class=""></td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">3</td></tr>
-                  <tr data-category="inference" data-subcategory="7-8b"><td>int4</td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">3</td><td class=""></td><td class=""></td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">1</td></tr>
-                  <tr data-category="inference" data-subcategory="14-34b"><td rowspan="3" class="align-middle">14B-34B</td><td>bfloat16</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td><td class=""></td><td class=""></td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">2</td></tr>
-                  <tr data-category="inference" data-subcategory="14-34b"><td>float16</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">1</td><td class=""></td><td class=""></td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">3</td></tr>
-                  <tr data-category="inference" data-subcategory="14-34b"><td>int4</td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">2</td><td class="bg-light-subtle">3</td><td class=""></td><td class=""></td><td class="bg-light-subtle">1</td><td class="bg-light-subtle">3</td><td class="bg-light-subtle">1</td></tr>
+                  <tr data-category="architecture" data-subcategory="attention" class="category-divider"> 
+                    <td rowspan="16" class="align-middle">Architecture Pretraining Efficiency</td>
+                    <td rowspan="4" class="align-middle">Attention Mechanism</td><td><b>MQA</b></td><td class="bg-score-4">4</td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-1">1</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">3</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="attention"><td>GQA</td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-4">4</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="attention"><td>MLA</td><td class="bg-score-1">1</td><td class="bg-score-4">4</td><td class=""></td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="attention"><td>NSA</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class=""></td><td class="bg-score-4">4</td><td class="bg-score-4">4</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-1">1</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="posenc">
+                    <td rowspan="4" class="align-middle">Efficient Positional Encoding</td><td>RoPE</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class=""></td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="posenc"><td>Absolute</td><td class="bg-score-4">4</td><td class="bg-score-4">4</td><td class=""></td><td class="bg-score-4">4</td><td class="bg-score-4">4</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-4">4</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="posenc"><td>Learnable Absolute</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">3</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="posenc"><td>Relate</td><td class="bg-score-2-3">3</td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-1">1</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-1">1</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="moe">
+                    <td rowspan="4" class="align-middle">MoE Mechanism</td><td>Dense Model 1.5B</td><td class="bg-score-4">4</td><td class="bg-score-2-3">2</td><td class=""></td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="moe"><td>Dense Model 3B</td><td class="bg-score-2-3">3</td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-1">1</td><td class="bg-score-4">4</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-1">1</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="moe"><td>MoE Model 1.5Bx8</td><td class="bg-score-1">1</td><td class="bg-score-4">4</td><td class=""></td><td class="bg-score-4">4</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-4">4</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="moe"><td>MoE Model 0.5Bx8</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">3</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="attfree">
+                    <td rowspan="4" class="align-middle">Attention-free Mechanism</td><td>Transformer</td><td class="bg-score-1">1</td><td class="bg-score-4">4</td><td class=""></td><td class="bg-score-4">4</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-4">4</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="attfree"><td>Mamba</td><td class="bg-score-2-3">2</td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-1">1</td><td class="bg-score-4">4</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-1">1</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="attfree"><td>Pythia</td><td class="bg-score-4">4</td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">3</td><td class=""></td></tr>
+                  <tr data-category="architecture" data-subcategory="attfree"><td>RWKV</td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">2</td><td class=""></td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class=""></td></tr>
+                  
+                  <tr data-category="training" data-subcategory="1-3b" class="category-divider"> 
+                    <td rowspan="21" class="align-middle">Training & Tuning Efficiency</td>
+                    <td rowspan="7" class="align-middle">1B-3B</td><td><b>LoRA</b></td><td class="bg-score-4">7</td><td class="bg-score-1">2</td><td class="bg-score-1">2</td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-1">2</td><td class=""></td><td class="bg-score-2-3">3</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="1-3b"><td>LoRA-Plus</td><td class="bg-score-2-3">4</td><td class="bg-score-2-3">5</td><td class="bg-score-4">6</td><td class="bg-score-2-3">4</td><td class=""></td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-1">2</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="1-3b"><td>RSLoRA</td><td class="bg-score-2-3">5</td><td class="bg-score-2-3">4</td><td class="bg-score-2-3">5</td><td class="bg-score-2-3">5</td><td class=""></td><td class="bg-score-2-3">4</td><td class=""></td><td class="bg-score-2-3">5</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="1-3b"><td>DoRA</td><td class="bg-score-4">6</td><td class="bg-score-4">7</td><td class="bg-score-2-3">3</td><td class="bg-score-4">7</td><td class=""></td><td class="bg-score-4">6</td><td class=""></td><td class="bg-score-4">6</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="1-3b"><td>PiSSA</td><td class="bg-score-2-3">3</td><td class="bg-score-4">6</td><td class="bg-score-2-3">4</td><td class="bg-score-4">6</td><td class=""></td><td class="bg-score-2-3">5</td><td class=""></td><td class="bg-score-2-3">4</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="1-3b"><td>Freeze</td><td class="bg-score-1">1</td><td class="bg-score-2-3">3</td><td class="bg-score-4">7</td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-4">7</td><td class=""></td><td class="bg-score-1">1</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="1-3b"><td>Full*</td><td class="bg-score-1">2</td><td class="bg-score-1">1</td><td class="bg-score-1">1</td><td class="bg-score-1">2</td><td class=""></td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-4">7</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="7-8b">
+                    <td rowspan="7" class="align-middle">7B-8B</td><td>LoRA</td><td class="bg-score-1">2</td><td class="bg-score-1">1</td><td class="bg-score-2-3">5</td><td class="bg-score-2-3">5</td><td class=""></td><td class="bg-score-2-3">4</td><td class=""></td><td class="bg-score-2-3">3</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="7-8b"><td>LoRA-Plus</td><td class="bg-score-2-3">5</td><td class="bg-score-1">2</td><td class="bg-score-4">7</td><td class="bg-score-4">6</td><td class=""></td><td class="bg-score-2-3">5</td><td class=""></td><td class="bg-score-1">2</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="7-8b"><td>RSLoRA</td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">4</td><td class="bg-score-4">6</td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-2-3">5</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="7-8b"><td>DoRA</td><td class="bg-score-2-3">4</td><td class="bg-score-4">6</td><td class="bg-score-2-3">3</td><td class="bg-score-4">7</td><td class=""></td><td class="bg-score-4">7</td><td class=""></td><td class="bg-score-4">6</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="7-8b"><td>PiSSA</td><td class="bg-score-4">6</td><td class="bg-score-2-3">3</td><td class="bg-score-2-3">4</td><td class="bg-score-2-3">4</td><td class=""></td><td class="bg-score-2-3">5</td><td class=""></td><td class="bg-score-2-3">4</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="7-8b"><td>Freeze</td><td class="bg-score-1">1</td><td class="bg-score-4">7</td><td class="bg-score-1">2</td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-1">1</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="7-8b"><td>Full*</td><td class="bg-score-4">7</td><td class="bg-score-2-3">5</td><td class="bg-score-1">1</td><td class="bg-score-1">2</td><td class=""></td><td class="bg-score-1">2</td><td class=""></td><td class="bg-score-4">7</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="14-24b">
+                    <td rowspan="7" class="align-middle">14B-24B</td><td>LoRA</td><td class="bg-score-2-3">3</td><td class="bg-score-1">1</td><td class="bg-score-4">6</td><td class="bg-score-1">2</td><td class=""></td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-4">6</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="14-24b"><td>LoRA-Plus</td><td class="bg-score-2-3">4</td><td class="bg-score-2-3">3</td><td class="bg-score-4">7</td><td class="bg-score-4">6</td><td class=""></td><td class="bg-score-4">7</td><td class=""></td><td class="bg-score-1">1</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="14-24b"><td>RSLoRA</td><td class="bg-score-1">1</td><td class="bg-score-1">2</td><td class="bg-score-2-3">5</td><td class="bg-score-2-3">4</td><td class=""></td><td class="bg-score-2-3">4</td><td class=""></td><td class="bg-score-2-3">5</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="14-24b"><td>DoRA</td><td class="bg-score-4">6</td><td class="bg-score-4">7</td><td class="bg-score-2-3">3</td><td class="bg-score-4">7</td><td class=""></td><td class="bg-score-1">2</td><td class=""></td><td class="bg-score-2-3">4</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="14-24b"><td>PiSSA</td><td class="bg-score-1">2</td><td class="bg-score-2-3">4</td><td class="bg-score-2-3">4</td><td class="bg-score-2-3">3</td><td class=""></td><td class="bg-score-2-3">4</td><td class=""></td><td class="bg-score-2-3">3</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="14-24b"><td>Freeze</td><td class="bg-score-2-3">5</td><td class="bg-score-4">6</td><td class="bg-score-1">2</td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-1">1</td><td class=""></td><td class="bg-score-1">2</td><td class=""></td></tr>
+                  <tr data-category="training" data-subcategory="14-24b"><td>Full*</td><td class="bg-score-4">7</td><td class="bg-score-2-3">5</td><td class="bg-score-1">1</td><td class="bg-score-2-3">5</td><td class=""></td><td class="bg-score-4">6</td><td class=""></td><td class="bg-score-4">7</td><td class=""></td></tr>
+
+                  <tr data-category="inference" data-subcategory="1.5-3.8b" class="category-divider"> 
+                    <td rowspan="9" class="align-middle">Bit-Width Quantization</td>
+                    <td rowspan="3" class="align-middle">1.5B-3.8B</td><td><b>bfloat16</b></td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class=""></td><td class=""></td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-4">3</td></tr>
+                  <tr data-category="inference" data-subcategory="1.5-3.8b"><td>float16</td><td class="bg-score-1">1</td><td class="bg-score-4">3</td><td class="bg-score-2-3">2</td><td class="bg-score-1">1</td><td class=""></td><td class=""></td><td class="bg-score-4">3</td><td class="bg-score-4">3</td><td class="bg-score-2-3">2</td></tr>
+                  <tr data-category="inference" data-subcategory="1.5-3.8b"><td>int4</td><td class="bg-score-4">3</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-4">3</td><td class=""></td><td class=""></td><td class="bg-score-1">1</td><td class="bg-score-1">1</td><td class="bg-score-1">1</td></tr>
+                  <tr data-category="inference" data-subcategory="7-8b">
+                    <td rowspan="3" class="align-middle">7B-8B</td><td>bfloat16</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class=""></td><td class=""></td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td></tr>
+                  <tr data-category="inference" data-subcategory="7-8b"><td>float16</td><td class="bg-score-2-3">2</td><td class="bg-score-4">3</td><td class="bg-score-2-3">2</td><td class="bg-score-1">1</td><td class=""></td><td class=""></td><td class="bg-score-4">3</td><td class="bg-score-4">3</td><td class="bg-score-4">3</td></tr>
+                  <tr data-category="inference" data-subcategory="7-8b"><td>int4</td><td class="bg-score-4">3</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-4">3</td><td class=""></td><td class=""></td><td class="bg-score-1">1</td><td class="bg-score-1">1</td><td class="bg-score-1">1</td></tr>
+                  <tr data-category="inference" data-subcategory="14-34b">
+                    <td rowspan="3" class="align-middle">14B-34B</td><td>bfloat16</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class=""></td><td class=""></td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td><td class="bg-score-2-3">2</td></tr>
+                  <tr data-category="inference" data-subcategory="14-34b"><td>float16</td><td class="bg-score-2-3">2</td><td class="bg-score-4">3</td><td class="bg-score-2-3">2</td><td class="bg-score-1">1</td><td class=""></td><td class=""></td><td class="bg-score-4">3</td><td class="bg-score-1">1</td><td class="bg-score-4">3</td></tr>
+                  <tr data-category="inference" data-subcategory="14-34b"><td>int4</td><td class="bg-score-4">3</td><td class="bg-score-1">1</td><td class="bg-score-2-3">2</td><td class="bg-score-4">3</td><td class=""></td><td class=""></td><td class="bg-score-1">1</td><td class="bg-score-4">3</td><td class="bg-score-1">1</td></tr>
                 </tbody>
               </table>
             </div>
             <div class="mt-4">
               <p class="small text-muted">
-                <strong>Legend:</strong><br>
-                <span class="badge bg-danger-subtle text-danger">1</span> - Lowest Score &nbsp;
-                <span class="badge bg-warning-subtle text-warning">2-3</span> - Medium Score &nbsp;
-                <span class="badge bg-success-subtle text-success">4</span> - Highest Score &nbsp;
-                <span class="badge bg-primary-subtle text-primary">1-7</span> - Training Efficiency Score &nbsp;
-                <span class="badge bg-light-subtle text-dark">1-3</span> - Inference Efficiency Score
+                <strong>Legend:</strong> (Color mapping for scores across categories)<br>
+                <span class="badge legend-score-1">High Tier</span> - (e.g., Arch: 1; Training: 1-2; Quant: 1) &nbsp;
+                <span class="badge legend-score-2-3">Medium Tier</span> - (e.g., Arch: 2-3; Training: 3-5; Quant: 2) &nbsp;
+                <span class="badge legend-score-4">Low Tier</span> - (e.g., Arch: 4; Training: 6-7; Quant: 3)
               </p>
               <p class="small text-muted">
                 <strong>Metrics:</strong><br>
@@ -259,87 +222,47 @@
             </div>
           </div>
         </div>
-
       </div>
+    </section>
 
-    </section><!-- /How We Work Section -->
-
-    <!-- Services Section -->
     <section id="services" class="services section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Architecture Pretraining Efficiency</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container">
-
-
-            <div class="img-wrapper" data-aos="fade-up" style="border: none; box-shadow: none;">
-              <img src="assets/img/E.png" alt="研究图表" class="img-fluid" style="border: none;">
-               <!-- <p style="text-align: left;">EfficientLLM establishes a comprehensive benchmark to evaluate and compare efficiency techniques across the lifecycle of large language models—from architecture pretraining to fine-tuning and inference—providing actionable insights into trade-offs between performance and consumption.</p> -->
-            </div>
-
+        <div class="img-wrapper" data-aos="fade-up" style="border: none; box-shadow: none;">
+          <img src="assets/img/E.png" alt="研究图表" class="img-fluid" style="border: none;">
+        </div>
       </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
+    </section>
 
     <section id="services" class="services section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Training and Tuning Efficiency</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container">
-
-
-            <div class="img-wrapper" data-aos="fade-up" style="border: none; box-shadow: none;">
-              <img src="assets/img/T.png" alt="研究图表" class="img-fluid" style="border: none;">
-               <!-- <p style="text-align: left;">EfficientLLM establishes a comprehensive benchmark to evaluate and compare efficiency techniques across the lifecycle of large language models—from architecture pretraining to fine-tuning and inference—providing actionable insights into trade-offs between performance and consumption.</p> -->
-            </div>
-
+        <div class="img-wrapper" data-aos="fade-up" style="border: none; box-shadow: none;">
+          <img src="assets/img/T.png" alt="研究图表" class="img-fluid" style="border: none;">
+        </div>
       </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
+    </section>
 
     <section id="services" class="services section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Bit-Width Quantization Efficiency</h2>
-        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
-      </div><!-- End Section Title -->
-
+      </div>
       <div class="container">
-
-
-            <div class="img-wrapper" data-aos="fade-up" style="border: none; box-shadow: none;">
-              <img src="assets/img/I.png" alt="研究图表" class="img-fluid" style="border: none;">
-               <!-- <p style="text-align: left;">EfficientLLM establishes a comprehensive benchmark to evaluate and compare efficiency techniques across the lifecycle of large language models—from architecture pretraining to fine-tuning and inference—providing actionable insights into trade-offs between performance and consumption.</p> -->
-            </div>
-
+        <div class="img-wrapper" data-aos="fade-up" style="border: none; box-shadow: none;">
+          <img src="assets/img/I.png" alt="研究图表" class="img-fluid" style="border: none;">
+        </div>
       </div>
+    </section>
 
-      </div>
+  </main>
 
-    </section><!-- /Services Section -->
-
-    <!--  -->
-
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -347,15 +270,9 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Custom Table JS Files -->
   <script src="assets/js/table-interactive.js"></script>
   <script src="assets/js/table-fix.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-  <!-- Custom Script for Text Animation -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
         const text = "Evaluation on Architecture Pretraining, Fine-Tuning, and Bit-Width Quantization";
@@ -364,19 +281,16 @@
             console.error('Animated subtitle container not found!');
             return;
         }
-        container.innerHTML = ''; // Clear existing content if any
-
+        container.innerHTML = '';
         text.split('').forEach((char, index) => {
             const span = document.createElement('span');
             if (char === ' ') {
-                span.innerHTML = '&nbsp;'; // Ensure space is rendered
+                span.innerHTML = '&nbsp;';
             } else {
                 span.textContent = char;
             }
-            span.style.opacity = '0'; // Initial state: hidden
-            // Apply updated animation
+            span.style.opacity = '0';
             span.style.animation = `revealChar 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards`;
-            // Stagger the animation start for each character - adjusted delay
             span.style.animationDelay = `${index * 0.08}s`;
             container.appendChild(span);
         });
@@ -384,5 +298,4 @@
   </script>
 
 </body>
-
 </html>
